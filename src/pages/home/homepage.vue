@@ -1,10 +1,13 @@
 <template>
   <div class="main_container">
-    <div class="title-zone"></div>
+    <div class="title-zone">
+      <van-button type="primary">主要按钮</van-button>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "HomePage",
   data(){
@@ -13,7 +16,7 @@ export default {
     }
   },
   components: {
-
+    
   },
 };
 </script>
