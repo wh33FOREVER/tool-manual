@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div ref="app">
     <router-view></router-view>
   </div>
 </template>
@@ -14,15 +14,12 @@ export default {
   },
   components: {
     
+  },
+  mounted(){
+    console.log(this.$refs.app.offsetWidth);
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
+<style scoped>
 </style>
